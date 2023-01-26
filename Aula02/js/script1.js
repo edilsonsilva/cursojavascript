@@ -2,19 +2,23 @@ function corFundo(){
     var cor = document.getElementById("txtCor").value;
     cor = cor.toLowerCase();
 
+    var vcor = "";
+
     if(cor == "red"){
-        document.body.style.backgroundColor = "#FF0000";
+        vcor = "#f00";
     }
     else if(cor == "black"){
-        document.body.style.backgroundColor = "#000000";
+        vcor = "#000";
     }
     else if(cor == "green"){
-        document.body.style.backgroundColor = "#00FF00";
+        vcor = "#0f0";
     }
     else{
-        document.body.style.backgroundColor = "#FFFFFF";
+        vcor = "#fff";
         alert("A cor não existe na paleta");
     }
+    document.body.style.backgroundColor = vcor;
+    
 }
 
 
