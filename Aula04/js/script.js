@@ -85,5 +85,13 @@ document.getElementById("produto1").innerHTML = saida;
  const saida2 = `<h2>${produtos[1].nome}</h2>
                 <p class='m'>${produtos[1].marca}</p>
                 <p class='p'>${produtos[1].preco}</p>`;
-                
+
 document.getElementById("produto2").innerHTML = saida2;
+
+for(let i = 1; i <= 10; i++){
+    console.log(i);
+}
+
+for(let bt = 1 ; bt <= 10; bt++){
+    document.getElementById("caixa").innerHTML += `<button> Botão ${bt}</button>`;
+}
