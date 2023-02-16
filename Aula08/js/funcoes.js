@@ -45,7 +45,7 @@ const anobissexto = function (ano) {
     return "Ano não bissexto";
   }
 };
-10, 20;
+
 const paletaCores = function (linha, coluna) {
   var tabela = "<table>";
 
@@ -55,9 +55,13 @@ const paletaCores = function (linha, coluna) {
       var red = Math.round(1 + Math.random() * 254);
       var green = Math.round(1 + Math.random() * 254);
       var blue = Math.round(1 + Math.random() * 254);
-      tabela += `<td style='background-color:rgb(${red},${green},${blue})'>__</td>`;
+      tabela += `<td onclick = mudar('rgb(${red},${green},${blue})') style='background-color:rgb(${red},${green},${blue})'>__</td>`;
     }
     tabela += "</tr>";
   }
   return tabela;
 };
+
+function mudar(cor) {
+  window.document.body.style.backgroundColor = cor;
+}
