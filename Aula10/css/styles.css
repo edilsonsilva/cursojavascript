@@ -1,0 +1,56 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+}
+#quadro{
+    width: 100px;
+    height: 100px;
+    background-color: red;  
+    margin:0 auto;
+    position: absolute;
+    cursor: pointer;
+    transition: ease 0.5s;
+}
+#fundo{
+    background-color: rgba(0,0,0,0);
+    width: 100vw;
+    height: 100vh;
+    padding-top: 100px;
+    transition: ease 1s;
+}
+
+#tela{
+    background-color: rgb(255,255,255);
+    border-radius: 20px;
+    width: 50%;
+    height: 400px;
+    margin: auto;
+    padding:10px;
+    box-shadow: 5px 5px 10px gray;
+    position: relative;
+    top:-600px;
+    transition: ease 1s;
+    z-index: 0;
+}
+#fechar{
+    position: absolute;
+    right:0px;
+    top:0px;
+    padding:10px;
+    background-color: red;
+    border-top-right-radius: 30%;
+    text-align: center;
+    width: 50px;
+    z-index: 100000;
+}
+a{
+    color:white;
+    font-size:20pt;
+    font-weight: bold;
+    text-decoration: none;
+}
